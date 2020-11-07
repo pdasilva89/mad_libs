@@ -1,0 +1,244 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: roboto, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 7em;
+    color: #6B6B6B;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 2em;
+    color: #6B6B6B;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #6B6B6B;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+label {
+    font-size: 20px;
+    color: #6B6B6B;
+}
+
+#stories {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.storyGenres {
+    padding-left: 20%;
+    padding-right: 20%;;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+#romanceOutput, #actionOutput, #thrillerOutput, #comedyOutput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    font-family: roboto, sans-serif;
+    font-size: 3em;
+    padding-bottom: 0;
+    text-indent: 10px;
+}
+
+#romanceOutput img, #actionOutput img, #thrillerOutput img, #comedyOutput img {
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+.storyGenres h2 {
+    font-size: 5.5em;
+    margin-top: 50px;
+    text-align: center;
+    color: #6B6B6B;
+    font-family: pauline, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#titleImg {
+    width: 1em;
+    height: auto;
+}
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+#buttonSection, #inputSection1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttons, .input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons:first-child {
+    margin-bottom: 5%;
+}
+
+.buttons button {
+    width: 45%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    color: white;
+    font-family: pauline, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor:pointer;
+}
+
+#romance {
+    background-color: #B77BF9;
+}
+
+#action {
+    background-color: #5FE29C;
+}
+
+#thriller {
+    background-color: #FF7D7D;
+}
+
+#comedy {
+    background-color: #6ED4FC;
+}
+
+.featherImg {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+
+.input1, .input2, .input3, .input4 {
+    width: 45%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.storyGenres {
+    display: none;
+}
+
+.storyButtons {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+    color: #6B6B6B;
+    background-color:#F5F5F5;
+    cursor:pointer;
+}
+
+#reload {
+    display: none;
+}
+
+#footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    font-size: 1.5em;
+}
+
+#footer img {
+    width: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #stories {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    .buttons button {
+        font-size: 25px;
+    }
+    .storyGenres {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .featherImg {
+        top: 30%;
+        right: 5%;
+        width: 70px;
+    }
+    .storyButtons {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    #romanceOutput, #actionOutput, #thrillerOutput, #comedyOutput {
+        font-size: 2em;
+    }
+    
+    #romanceOutput img, #actionOutput img, #thrillerOutput img, #comedyOutput img {
+        width: 280px;
+}
+    #reload {
+        display: block;
+        margin-top: 50px;
+    }
+
+} 
+
+
+
+

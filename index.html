@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tel4lug.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rty7xsc.css">
+</head>
+<body>
+    <div id="stories">
+        <h1>Mad Libs<span><img id="titleImg" src="images/titleImg.svg" alt=""></span></h1>
+        <div id="instructions"><h3>Instructions:</h3>
+            <p>To make your story, select one of the story genres below. 
+                Next, fill in a word for each prompt. Once you've filled 
+                in all the blanks click on the 'Generate Story' button and 
+                a story will be created with the words you provided!
+                <br>
+                <br>
+                <strong>*refresh page to reload story prompts</strong>
+            </p>
+                
+            </div>
+        <div id="buttonSection">
+            <div class="buttons">
+                <button onclick="story('1')" id="romance">Romance</button>
+                <button onclick="story('2')" id="action">Action</button>
+            </div>
+            <div class="buttons">
+                <button onclick="story('3')" id="thriller">Thriller</button>
+                <button onclick="story('4')" id="comedy">Comedy</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div>
+
+<div style="background-color:rgb(183,123,249, 0.5);" class="storyGenres" id="story1" onload="enterStory('romance')">
+    <h2 id="rom">Romance</h2>
+        <div id="inputSection1">
+            <img class="featherImg" src="images/feather.svg" alt="">
+            <div div="inputSect" class ="input">
+                <div class="input1">
+                    <label for="">Adjective</label>
+                    <input name="input" class="input" id="romanceAdjective" type="text">   
+                </div>
+                <div class="input2">
+                    <label for="">Noun</label>
+                    <input name="input" id="romanceNoun" type="text">
+                </div>
+            </div>
+            <div class ="input">
+                <div class="input3">
+                    <label for="">Verb</label>
+                    <input name="input" id="romanceVerb" type="text">
+                </div>
+                <div class="input4">
+                    <label for="">Favorite Celebrity</label>
+                    <input name="input" id="romanceSpecial" type="text">
+                </div>
+            </div>
+            
+        </div> 
+        <button class = "storyButtons" onclick="storyType('1')" id="romanceStory">Generate Story</button>
+        
+        <div id="romanceOutput">
+            
+
+            
+           
+        </div>
+    </div>
+   
+
+
+    <div style="background-color:rgb(95,226,156,0.5);" class="storyGenres" id="story2" onload="enterStory('action')">
+        <h2 id="act">Action</h2>
+            <div id="inputSection2">
+                <img class="featherImg" src="images/feather.svg" alt="">
+                <div class ="input">
+                    <div class="input1">
+                        <label for="">Adjective</label>
+                        <input id="actionAdjective" type="text">
+                    </div>
+                    <div class="input2">
+                        <label for="">Noun</label>
+                        <input id="actionNoun" type="text">
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input3">
+                        <label for="">Verb</label>
+                        <input id="actionVerb" type="text">
+                    </div>
+                </div>
+                <button class = "storyButtons" onclick="storyType('2')" id="actionStory">Generate Story</button>
+            </div>
+        <div id="actionOutput">
+
+        </div>
+    </div>
+
+    <div style="background-color:rgb(255,125,125,0.5);"  class="storyGenres" id="story3" onload="enterStory('thriller')">
+        <h2 id="thr">Thriller</h2>
+        <div id="inputSection3">
+            <img class="featherImg" src="images/feather.svg" alt="">
+            <div class="input">
+                <div class="input1">
+                    <label for="">Adjective</label>
+                    <input id="thrillerAdjective" type="text">
+                </div>
+                <div class="input2">
+                    <label for="">Noun</label>
+                    <input id="thrillerNoun" type="text">   
+                </div>
+            </div>
+            <div class="input">
+                <div class="input3">
+                    <label for="">Verb</label>
+                    <input id="thrillerVerb" type="text">
+                </div>
+                <div class="input4">
+                    <label for="">Type of residential home</label>
+                    <input id="home" type="text">
+                </div>
+            </div>
+            <button class = "storyButtons" onclick="storyType('3')" id="actionStory">Generate Story</button>
+        </div>
+        <div id="thrillerOutput">
+
+        </div>
+    </div>
+
+    <div style="background-color:rgb(110,212,252,0.5);" class="storyGenres" id="story4" onload="enterStory('comedy')">
+        <h2 id="com">Comedy</h2>
+        <div id="inputSection4">
+            <img class="featherImg" src="images/feather.svg" alt="">
+            <div class="input">
+                <div class="input1">
+                    <label for="">Adjective</label>
+                    <input id="comedyAdjective" type="text">
+                </div>
+                <div class="input2">
+                    <label for="">Noun</label>
+                    <input id="comedyNoun" type="text">
+                </div>
+            </div>
+            <div class="input">
+                <div class="input3">
+                    <label for="">Verb</label>
+                    <input id="comedyVerb" type="text">
+                </div>
+                <div class="input4">
+                    <label for="">Favorite Country</label>
+                    <input id="country" type="text">
+                </div>
+            </div>
+        <button class = "storyButtons" onclick="storyType('4')" id="actionStory">Generate Story</button>
+    </div>
+        <div id="comedyOutput">
+
+        </div>
+    </div> 
+
+    <div id="footer">
+        <p>Made by Priscila Dasilva with <span><img src="images/heart.svg" alt=""></span></p>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
