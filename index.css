@@ -216,7 +216,7 @@ label {
         padding-right: 5%;
     }
     .featherImg {
-        top: 30%;
+        top: 20%;
         right: 5%;
         width: 70px;
     }
@@ -235,6 +235,12 @@ label {
     #reload {
         display: block;
         margin-top: 50px;
+    }
+    .input {
+        flex-direction: column;
+    }
+    .input1, .input2, .input3, .input4 {
+        width: 100%;
     }
 
 } 
